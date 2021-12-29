@@ -2,7 +2,7 @@
 
 A Quasar Framework app
 
-## Install the dependencies
+## Установка зависимостей
 ```bash
 npm install
 ```

@@ -2,6 +2,21 @@
   "vetur.validation.template": false,
   "vetur.format.enable": false,
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
-  
-  "vetur.experimental.templateInterpolationService": true
+
+  "vetur.experimental.templateInterpolationService": true,
+  "cSpell.words": [
+    "брендингу",
+    "парсить",
+    "Раскомментируйте",
+    "транспилировать",
+    "транспилируется",
+    "транспилируются",
+    "browserlist",
+    "fontawesome",
+    "ionicons",
+    "middlewares",
+    "myapp",
+    "themify",
+    "transpiling"
+  ]
 }

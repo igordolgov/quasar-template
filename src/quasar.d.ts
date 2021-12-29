@@ -1,7 +1,7 @@
-// Forces TS to apply `@quasar/app` augmentations of `quasar` package
-// Removing this would break `quasar/wrappers` imports as those typings are declared
-//  into `@quasar/app`
-// As a side effect, since `@quasar/app` reference `quasar` to augment it,
-//  this declaration also apply `quasar` own
-//  augmentations (eg. adds `$q` into Vue component context)
+// Заставляет TS применять дополнения `@quasar/app` пакета "quasar"
+// Удаление этого приведет к нарушению импорта "квазаров / оболочек", поскольку эти типы
+// объявлены в `@quasar/app`
+// В качестве побочного эффекта, поскольку "@quasar/app" ссылается на "quasar", чтобы дополнить его,
+// в этом объявлении также применяются собственные дополнения "quasar"
+// (например, добавляет "$q` в контекст компонента Vue)
 /// <reference types="@quasar/app" />

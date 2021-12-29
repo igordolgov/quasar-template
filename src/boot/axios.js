@@ -1,24 +1,24 @@
 import { boot } from 'quasar/wrappers'
 import axios from 'axios'
 
-// Be careful when using SSR for cross-request state pollution
-// due to creating a Singleton instance here;
-// If any client changes this (global) instance, it might be a
-// good idea to move this instance creation inside of the
-// "export default () => {}" function below (which runs individually
-// for each client)
+// Будьте осторожны при использовании SSR для перекрестного запроса состояния загрязнения
+// из-за создания одноэлементного экземпляра здесь;
+// Если какой-либо клиент изменит этот (глобальный) экземпляр, это может быть
+// хорошей идеей переместить создание этого экземпляра внутрь
+// функции "export default () => {}" ниже (которая выполняется индивидуально
+// для каждого клиента)
 const api = axios.create({ baseURL: 'https://api.example.com' })
 
 export default boot(({ app }) => {
-  // for use inside Vue files (Options API) through this.$axios and this.$api
+    // for use inside Vue files (Options API) through this.$axios and this.$api
 
-  app.config.globalProperties.$axios = axios
-  // ^ ^ ^ this will allow you to use this.$axios (for Vue Options API form)
-  //       so you won't necessarily have to import axios in each vue file
+    app.config.globalProperties.$axios = axios
+        // ^ ^ ^ Позволяет использовать this.$axios (для формы API параметров Vue)
+        //       таким образом, не обязательно импортировать axios в каждый файл vue
 
-  app.config.globalProperties.$api = api
-  // ^ ^ ^ this will allow you to use this.$api (for Vue Options API form)
-  //       so you can easily perform requests against your app's API
+    app.config.globalProperties.$api = api
+        // ^ ^ ^ Позволяет использовать this.$api (для формы API параметров Vue)
+        //       для легкого выполнения запросов к API приложения
 })
 
 export { api }

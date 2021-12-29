@@ -2,11 +2,11 @@
 .thumbs.db
 node_modules
 
-# Quasar core related directories
+# Папки, связанные с ядром Quasar
 .quasar
 /dist
 
-# Cordova related directories and files
+# Папки и файлы связанные с Cordova
 /src-cordova/node_modules
 /src-cordova/platforms
 /src-cordova/plugins
@@ -16,16 +16,16 @@ node_modules
 /src-capacitor/www
 /src-capacitor/node_modules
 
-# BEX related directories and files
+# Папки и файлы, связанные с BEX
 /src-bex/www
 /src-bex/js/core
 
-# Log files
+# Файлы журналов
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Editor directories and files
+# Папки и файлы Редактора
 .idea
 *.suo
 *.ntvs*
